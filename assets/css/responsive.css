@@ -1,0 +1,237 @@
+@media (min-width: 1260px) {
+    .section-title{
+        font-size: 28px;
+    }
+    header .header-top .right {
+        display: none;
+    }
+    header {
+        padding: 0;
+    }
+    header .header-top {
+        padding: 22px 0 11px 0;
+    }
+    /*header desctop styles*/
+
+    header .header-top .gift-cert {
+        color: #f34747;
+        font-size: 14px;
+    }
+    header .header-top .number {
+        font-size: 13px;
+        color: #f34747;
+        font-weight: 600;
+    }
+    .language a {
+        font-size: 12px;
+        color: #ffffff;
+        text-transform: uppercase;
+        padding: 0 10px;
+        line-height: 12px;
+        font-weight: 600;
+
+    }
+    .language a:first-child{
+        border-right: 1px solid #ffffff;
+    }
+    .language a.active{
+        color: #f34747;
+    }
+    .right-pc {
+        display: flex;
+        align-items: center;
+    }
+    .right-pc .language {
+        margin-left: 23px;
+    }
+    header nav {
+        display: flex;
+        border-top: 1px solid #f34747;
+        border-bottom: 1px solid #f34747;
+    }
+    header nav .nav-wrap{
+        border-left: 1px solid #f34747;
+        border-right: 1px solid #f34747;
+    }
+    header nav .nav-menu{
+        border-right: 1px solid #f34747;
+    }
+
+    header nav .nav-menu li {
+        padding: 16px 35px;
+    }
+    header nav .nav-menu li a {
+        font-size: 13px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    header nav .call-me {
+        font-size: 13px;
+        color: #ffffff;
+        font-weight: 900;
+        text-transform: uppercase;
+        padding: 19px 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+    header .header-top {
+        align-items: center;
+    }
+    header nav,
+    header .call-me,
+    header .gift-cert{
+        display: block;
+    }
+    header .right-pc ,
+    header .language {
+
+        display: flex;
+    }
+
+    header {
+        height: 117px;
+        background: url("../images/header-bg-pc.png");
+    }
+    #home {
+        padding: 244px 0 67px 0;
+        background: url("../images/home-bg-pc.png")no-repeat center bottom;
+        background-size: cover;
+    }
+    #home .home-box {
+        text-align: center;
+        padding: 0 100px;
+    }
+    #home .home-box h1 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    #home .home-box .button {
+        margin: 0 auto;
+    }
+
+    #home .home-box p {
+        font-size: 18px;
+
+    }
+    #we-do .box .title {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    #we-do .box {
+        margin-bottom: 0;
+    }
+    #popular .popular-slider {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 30px;
+    }
+    #popular .section-title-wrap a {
+        display: flex;
+    }
+    #popular .button2 {
+        display: flex;
+    }
+    .popular-slider .ex-card {
+        margin-right: 0;
+    }
+    .popular-slider {
+        padding-left: 0;
+    }
+    #popular .section-title {
+        padding-left: 0;
+        margin-bottom: 25px;
+    }
+    .ex-card .card-body .description {
+        font-size: 16px;
+        padding-right: 30px;
+        margin: 20px 0;
+    }
+    .ex-card .card-body .description br {
+        display: none;
+    }
+    .ex-card .card-body .price, .ex-card .card-body .time {
+        font-weight: 500;
+    }
+    .ex-card .card-body .rating img {
+        width: 20px;
+        height: 20px;
+    }
+    .ex-card .card-header .title {
+        font-size: 18px;
+    }
+    .ex-card .card-header {
+        width: 100%;
+        height: 140px;
+    }
+    #military-quests {
+        padding: 50px 0;
+    }
+    #military-quests .card-row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+    #military-quests .ex-card .card-header {
+        height: 220px;
+    }
+    .footer-center{
+        display: flex;
+        align-items: baseline;
+    }
+    .footer-center .footer-nav li a {
+        font-size: 16px;
+    }
+    .footer-center .payments{
+        order: 4;
+    }
+    .footer-center .payments img {
+        width: 255px;
+    }
+    .footer-center .contacts {
+        padding: 0;
+        margin: 0 80px 0 125px;
+    }
+    .footer-center .contacts .number-box {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-center .contacts .number-box a:first-child {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+    .footer-center .contacts .number-box a {
+        font-size: 16px;
+    }
+    .footer-center .contacts .title {
+        font-size: 16px;
+    }
+    .main-banner {
+        width: 1100px;
+        margin: 0 auto;
+        height: 161px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .main-banner br {
+        display: none;
+    }
+    .main-banner .container {
+        padding: 0;
+    }
+    #visiting {
+        background: url("../images/why-pc.png")no-repeat center;
+        height: 160px;
+        background-size: cover;
+    }
+    #by-the-way {
+        background: url("../images/by-the-way-pc.png")no-repeat;
+        background-size: cover;
+    }
+    #popular .container {
+        padding: 0 20px;
+    }
+
+
+}

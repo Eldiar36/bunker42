@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+          integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+          integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css"
+          integrity="sha512-nIm/JGUwrzblLex/meoxJSPdAKQOe2bLhnrZ81g5Jbh519z8GFJIWu87WAhBH+RAyGbM4+U3S2h+kL5JoV6/wA=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header-top">
+            <a href="#" class="gift-cert">
+                Подарочные сертификаты
+            </a>
+            <a href="#" class="logo">
+                <img src="assets/images/logo.png" alt="">
+            </a>
+           <div class="right">
+               <div class="burger-menu" id="burger-menu">
+                   <div class="burger-menu_button">
+                       <svg xmlns="http://www.w3.org/2000/svg" fill="#f34747" viewBox="0 0 16 16" width="16" height="18"><path d="M8 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm13 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+                   </div>
+                   <nav class="burger-menu_nav">
+                        <ul class="mobile-menu">
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                                        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+                                    </svg>
+                                    главная
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-table" viewBox="0 0 16 16">
+                                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
+                                    </svg>
+                                    Экскурсии
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-puzzle-fill" viewBox="0 0 16 16">
+                                        <path d="M3.112 3.645A1.5 1.5 0 0 1 4.605 2H7a.5.5 0 0 1 .5.5v.382c0 .696-.497 1.182-.872 1.469a.459.459 0 0 0-.115.118.113.113 0 0 0-.012.025L6.5 4.5v.003l.003.01c.004.01.014.028.036.053a.86.86 0 0 0 .27.194C7.09 4.9 7.51 5 8 5c.492 0 .912-.1 1.19-.24a.86.86 0 0 0 .271-.194.213.213 0 0 0 .036-.054l.003-.01v-.008a.112.112 0 0 0-.012-.025.459.459 0 0 0-.115-.118c-.375-.287-.872-.773-.872-1.469V2.5A.5.5 0 0 1 9 2h2.395a1.5 1.5 0 0 1 1.493 1.645L12.645 6.5h.237c.195 0 .42-.147.675-.48.21-.274.528-.52.943-.52.568 0 .947.447 1.154.862C15.877 6.807 16 7.387 16 8s-.123 1.193-.346 1.638c-.207.415-.586.862-1.154.862-.415 0-.733-.246-.943-.52-.255-.333-.48-.48-.675-.48h-.237l.243 2.855A1.5 1.5 0 0 1 11.395 14H9a.5.5 0 0 1-.5-.5v-.382c0-.696.497-1.182.872-1.469a.459.459 0 0 0 .115-.118.113.113 0 0 0 .012-.025L9.5 11.5v-.003l-.003-.01a.214.214 0 0 0-.036-.053.859.859 0 0 0-.27-.194C8.91 11.1 8.49 11 8 11c-.491 0-.912.1-1.19.24a.859.859 0 0 0-.271.194.214.214 0 0 0-.036.054l-.003.01v.002l.001.006a.113.113 0 0 0 .012.025c.016.027.05.068.115.118.375.287.872.773.872 1.469v.382a.5.5 0 0 1-.5.5H4.605a1.5 1.5 0 0 1-1.493-1.645L3.356 9.5h-.238c-.195 0-.42.147-.675.48-.21.274-.528.52-.943.52-.568 0-.947-.447-1.154-.862C.123 9.193 0 8.613 0 8s.123-1.193.346-1.638C.553 5.947.932 5.5 1.5 5.5c.415 0 .733.246.943.52.255.333.48.48.675.48h.238l-.244-2.855z"/>
+                                    </svg>
+                                    Квесты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 42 38">
+                                        <image id="collection-fill" width="42" height="38" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAmCAYAAACyAQkgAAABTElEQVRYhe3YsUrDUBSA4T+im9KlIIKzW8F3ENpVBSdBfAS3unYQHDu5Czr5BOIidCsquLqKiqCDVCetyJFEtL2X3muP9RTuv6Q0t+HjNCEkWadWI7A5YBcohf5gQE/ANnAXsngy4sCbwIYSsugK2AlZOBFx0BPgZijWz26B49DFMRM9A+aHxP26mIn+a76JzgJrkRPX6A04Au57d/gge8DqCGCuloCV3u99f73mRRPbtWu9b6JbwD4wM2LkM3Dh2uGDvgPnf2uK6zt0CljItxZ6zW8Isv2CrgNNoGxpisBDfhoeCnQZODCAclXObS9y1Tfs+fpqCLRiDOWqItDMnquvbGzu9QmqXYJql6DaJah2CapdgmqXoNolqHYC7Y6BsyvQtgHIoNoCrRcP+UYTW12gLaAKXBp0iklsreJNySmwCEwbelvyCHQ+PwEfp2stKaCnp+4AAAAASUVORK5CYII="/>
+                                    </svg>
+                                    проведение <br> мероприятий
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-map-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.502.502 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5V.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.498.498 0 0 0-.196 0L5 14.09zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1-.5-.1z"/>
+                                    </svg>
+                                    контакты
+                                </a>
+                            </li>
+                        </ul>
+                       <a href="#" class="gift-certificate">
+                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 48 48">
+                               <image id="gift-fill" width="48" height="48" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAB10lEQVRoge2ZP0/CQBjGfxBMgAHlU5i4kLC7yuLkQhgddOJLuBsTEidNdHAgLk5OfgE2BwcTY8Lgwoh/BjAYMadvzVlpr7XEa8n9koa73vuU52mv7QVyL40GMSkA20ATqANVYAhcA+fAKfAWcMgk2pnEDbAGXACrITV3wBZwO0dtIPmY5nsGA8h4T+rnoZ1LgIKcvYr0J8A+UJNpUJP+RMYrUl9IqDUSdQrtAEeagU3gakbdBnAJLEl/Vz7/qj02GYt6BZpauxNgANnf8emSaI1EDVDX2meGWn28nlBrJMo8y8lc9Xgw1N9r7apvzKTVx6tygt/DBFGuwBQYhZjyMzKMh6Efe2Qy7wUoAycimAZsJU3TD6nztiCGBl1f05VC6kbiuaym0KG8HbNE0fOsrkArY+Z1WnlJk1WKcZYSqWQhAoxT4OOvjFWAbja9f9JVj9G2dFoZuqHHcuLb+mpULRmW7fqKzJP3wtTXQmrHY7p9/2bhHqOmNU7UbSXg++Z+fPcis40LYBsXwDYugG1cANu4ALZxAWzjAtjGBbCNC2AbF8ASr0EBBhkwP9D/h/MHyMIPvT88+gPsATf/6ycWypvy+I0/wDOwDhykbDopL8qT8qY8fgF8ANIBn1M8MaJGAAAAAElFTkSuQmCC"/>
+                           </svg>
+                           Подарочные <br> сертификаты
+                       </a>
+                       <div class="language">
+                           <a href="#" class="active">ru</a>
+                           <a href="#">en</a>
+                       </div>
+                   </nav>
+                   <div class="burger-menu_overlay">
+                   </div>
+               </div>
+               <a href="#" class="call">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
+                       <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
+                   </svg>
+               </a>
+
+           </div>
+            <div class="right-pc">
+                <a href="#" class="number">
+                    +7 (499) 375-21-25
+                </a>
+                <div class="language">
+                    <a href="#" class="active">ru</a>
+                    <a href="#">en</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="container">
+            <div class="nav-wrap d-flex">
+                <ul class="nav-menu d-flex">
+                    <li><a href="#"> главная</a></li>
+                    <li><a href="#"> Экскурсии</a></li>
+                    <li><a href="#"> Квесты</a></li>
+                    <li><a href="#">  проведение мероприятий</a></li>
+                    <li><a href="#">  контакты</a></li>
+                </ul>
+                <a href="#" class="call-me">Обратный звонок</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <section id="home">
+        <div class="container">
+            <div class="home-box">
+                <h1>
+                    <span>
+                        Бункер-42
+                    </span>
+
+                    Музей холодной войны на Таганке
+                </h1>
+                <p>Посетите единственный в мире рассекреченный противоатомный Бункер, находящийся в самом центре
+                    столицы, на глубине 65-ти метров под землей
+                </p>
+                <a href="#" class="button ">Забронировать экскурсию </a>
+            </div>
+        </div>
+    </section>
+    <section id="visiting" class="main-banner">
+        <div class="container">
+            <div class="banner-parallax">
+
+            </div>
+            <h2 class="section-title">
+                Почему Бункер <br> стоит посетить?
+            </h2>
+            <p>
+                Секретный комплекс площадью 7000 м2 находится на глубине 16-тиэтажного дома.
+            </p>
+            <a href="#">Узнать больше</a>
+        </div>
+    </section>
+    <section id="we-do">
+        <div class="container">
+            <h2 class="section-title">
+                Мы проводим
+            </h2>
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <a href="#" class="box">
+                        <div class="title">
+                            Экскурсии
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <a href="#" class="box military-quests">
+                        <div class="title">
+                            Военные квесты
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <a href="#" class="box meeting">
+                        <div class="title">
+                            Мероприятия
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="popular">
+
+        <div class="container">
+            <div class="section-title-wrap">
+                <h2 class="section-title">
+                    Популярные экскурсии
+                </h2>
+                <a href="#">Смотреть все</a>
+            </div>
+            <div class="popular-slider">
+                <div class="ex-card">
+                    <div class="card-header">
+                        <div class="title">Бункер 42</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="rating">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-half.png" alt="">
+                        </div>
+                        <div class="price-time">
+                            <div class="time">1ч 10м</div>
+                            <div class="price">1100 руб. (700 руб.)</div>
+                        </div>
+                        <p class="description">
+                            Самая базовая экскурсия для тех,
+                            кто вообще не знает,
+                            что за бункер и зачем он нужен
+                        </p>
+                        <a href="#" class="more">Подробнее</a>
+                    </div>
+                </div>
+                <div class="ex-card">
+                    <div class="card-header">
+                        <div class="title">Карибский кризис</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="rating">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-half.png" alt="">
+                        </div>
+                        <div class="price-time">
+                            <div class="time">1ч 10м</div>
+                            <div class="price">750 руб. (550 руб.)</div>
+                        </div>
+                        <p class="description">
+                            Подробный экскурс в тонкости <br> Холодной войны и гонку <br> вооружений.
+                        </p>
+                        <a href="#" class="more">Подробнее</a>
+                    </div>
+                </div>
+                <div class="ex-card meetings"
+                >
+                    <div class="card-header">
+                        <div class="title">Спецобъект на Таганке
+                            </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="rating">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-half.png" alt="">
+                        </div>
+                        <div class="price-time">
+                            <div class="time">1ч 10м</div>
+                            <div class="price">1100 руб. (700 руб.)</div>
+                        </div>
+                        <p class="description">
+                            Самая базовая экскурсия для тех, кто вообще не знает, что за бункер и зачем он нужен
+                        </p>
+                        <a href="#" class="more">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="button2">Все экскурсии</a>
+        </div>
+    </section>
+    <section id="gift-certificate" class="main-banner">
+        <div class="container">
+            <h2 class="section-title">
+                Приобритите <br> подарочный сертификат
+            </h2>
+            <p>Он может удивить и порадовать ваших близких</p>
+            <a href="#">Узнать больше</a>
+        </div>
+    </section>
+    <section id="military-quests">
+        <div class="container">
+            <h2 class="section-title">
+                Военные квесты
+            </h2>
+            <div class="card-row">
+                <div class="ex-card">
+                    <div class="card-header">
+                        <div class="title">Лазертаг</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="rating">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-half.png" alt="">
+                        </div>
+                        <div class="price-time">
+                            <div class="price">10–30 чел. (от 30 000 руб.)
+                            </div>
+                            <div class="time"> от 60 мин.</div>
+                        </div>
+                        <p class="description">
+                            Самая базовая экскурсия для тех, кто вообще не знает, что за бункер и зачем он нужен Самая базовая экскурсия для тех, кто вообще не знает, что за бункер и зачем он нужен
+                            Подробнее
+                        </p>
+                        <a href="#" class="more">Подробнее</a>
+                    </div>
+                </div>
+                <div class="ex-card">
+                    <div class="card-header firetag">
+                        <div class="title">Фаертаг</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="rating">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-fill.png" alt="">
+                            <img src="assets/images/star-half.png" alt="">
+                        </div>
+                        <div class="price-time">
+                            <div class="price">10–30 чел. (от 30 000 руб.)
+                            </div>
+                            <div class="time"> от 60 мин.</div>
+                        </div>
+                        <p class="description">
+                            Самая базовая экскурсия для тех, кто вообще не знает, что за бункер и зачем он нужен Самая базовая экскурсия для тех, кто вообще не знает, что за бункер и зачем он нужен
+                            Подробнее
+                        </p>
+                        <a href="#" class="more">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="by-the-way" class="main-banner">
+        <div class="container">
+            <div class=" banner-parallax-two"></div>
+            <h2 class="section-title">
+                Кстати
+            </h2>
+            <p>Возможно, неожиданным окончанием вашей экскурсии может стать обед*
+                в ресторане вдали от авиаугроз. </p>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <div class="footer-top">
+            <div class="logo-box">
+                <a href="#" class="logo">
+                    <img src="assets/images/footer-logo.png" alt="">
+                </a>
+                <a href="#" class="scrool-top">Наверх</a>
+            </div>
+        </div>
+            <div class="footer-center">
+                <ul class="footer-nav">
+                    <li><a href="#">Экскурсии</a></li>
+                    <li><a href="#">Проведение мероприятий</a></li>
+                    <li><a href="#">Квесты</a></li>
+                    <li><a href="#">Подарочные сертификаты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <div class="payments">
+                    <img src="assets/images/payments.png" alt="">
+                </div>
+                <div class="contacts">
+                    <div class="title">Свяжитесь с нами</div>
+                    <div class="number-box">
+                        <a href="#">+7 (902) 666-44-22</a>
+                        <a href="#">Заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+        <div class="copyright">
+            <img src="assets/images/visota.png" alt="">
+            <div class="text">
+                <p>© 2010-2021 Бункер-42 </p>
+                <span>Все права защиены.f</span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"
+        integrity="sha512-+m6t3R87+6LdtYiCzRhC5+E0l4VQ9qIT1H9+t1wmHkMJvvUQNI5MKKb7b08WL4Kgp9K0IBgHDSLCRJk05cFUYg=="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
