@@ -899,8 +899,10 @@ footer {
     text-transform: uppercase;
 }
 .white-popup-block {
-    z-index: 99999;
     margin: 0 auto;
+}
+.datepicker {
+    z-index: 999999;
 }
 
 /*callback-popup */
