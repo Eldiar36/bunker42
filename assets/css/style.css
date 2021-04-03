@@ -1,4 +1,4 @@
-* {
+﻿* {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -902,9 +902,8 @@ footer {
     margin: 0 auto;
 }
 .datepicker {
-    z-index: 999999;
+    z-index: 999999!important;
 }
-
 
 
 /*callback-popup */
