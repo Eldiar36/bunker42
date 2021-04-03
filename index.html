@@ -14,9 +14,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
           integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
           crossorigin="anonymous"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.css"
+          integrity="sha512-qP7Bo11vBMwOisDf5u5XX4EG7PwtuTha6Ghh864As/xLSKdD5BbW5gVE2Tym6VerZFEev9OmmHV2BKuanp/WaA=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.theme.min.css"
+          integrity="sha512-KHRZlYOTiXpB0ZlmJrpqSZYxSl6XS8LJ7LoGFroB0BszBr6DcZYZK7C8oIfviPKmcDR0dI2ilaGxBAb4+0VsmA=="
+          crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css"
           integrity="sha512-nIm/JGUwrzblLex/meoxJSPdAKQOe2bLhnrZ81g5Jbh519z8GFJIWu87WAhBH+RAyGbM4+U3S2h+kL5JoV6/wA=="
           crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css"
+          integrity="sha512-Ujn3LMQ8mHWqy7EPP32eqGKBhBU8v39JRIfCer4nTZqlsSZIwy5g3Wz9SaZrd6pp3vmjI34yyzguZ2KQ66CLSQ=="
+          crossorigin="anonymous"/>
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -123,7 +135,12 @@
                     <li><a href="#">  проведение мероприятий</a></li>
                     <li><a href="#">  контакты</a></li>
                 </ul>
-                <a href="#" class="call-me">Обратный звонок</a>
+                <div class="call-me-box">
+                    <a href="#callback" data-toggle="modal" class="call-me callback-popup">
+
+                        Обратный звонок</a>
+                    
+                </div>
             </div>
         </div>
     </nav>
@@ -142,7 +159,7 @@
                 <p>Посетите единственный в мире рассекреченный противоатомный Бункер, находящийся в самом центре
                     столицы, на глубине 65-ти метров под землей
                 </p>
-                <a href="#" class="button ">Забронировать экскурсию </a>
+                <a href="#booking-room" class="button popup-with-zoom-anim booking-popup">Забронировать экскурсию </a>
             </div>
         </div>
     </section>
@@ -387,11 +404,159 @@
         </div>
     </div>
 </footer>
+
+<div id="booking-room" class=" zoom-anim-dialog  white-popup-block mfp-hide">
+    <div class="section-title">Забронируйте экскурсию онлайн</div>
+    <div class="popup-body">
+       <div class="details">
+           <div class="select">
+               <input class="select__input" type="hidden" name="" value="Мячково">
+               <div class="select__head">Спецобъект на таганке 16+
+
+               </div>
+               <ul class="select__list" style="display: none;">
+                   <li class="select__item">Спецобъект на таганке 16+
+                   </li>
+                   <li class="select__item">Спецобъект на таганке 16+ 2</li>
+               </ul>
+           </div>
+           <div class="date-box">
+               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill=" #f34747" class="bi bi-calendar3" viewBox="0 0 16 16">
+                   <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                   <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+               </svg>
+               <input type='text' class='datepicker-here' value="23.07.2021" />
+           </div>
+           <div class="people">
+               <div class="people-category">
+                   <div class="title"></div>
+                   <div class="title">Взрослые</div>
+                   <div class="title">Дети</div>
+               </div>
+               <div class="people-box">
+                   <div class="name">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill=" #f34747" class="bi bi-person-fill" viewBox="0 0 16 16">
+                           <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                       </svg>
+                       Рф и Снг
+                   </div>
+                   <div class="quantity_inner">
+                       <button class="bt_minus">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#f34747" class="bi bi-dash-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                               <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                           </svg>
+                       </button>
+                       <input type="text" value="3" size="2" class="quantity" data-max-count="20" />
+                       <button class="bt_plus">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#f34747" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                               <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                           </svg>
+                       </button>
+                   </div>
+                   <div class="quantity_inner">
+                       <button class="bt_minus">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#f34747" class="bi bi-dash-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                               <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                           </svg>
+                       </button>
+                       <input type="text" value="3" size="2" class="quantity" data-max-count="20" />
+                       <button class="bt_plus">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#f34747" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                               <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                           </svg>
+                       </button>
+                   </div>
+               </div>
+               <div class="people-box">
+                   <div class="name">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill=" #f34747" class="bi bi-person-fill" viewBox="0 0 16 16">
+                           <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                       </svg>
+                       Иностранцы
+                   </div>
+                   <div class="quantity_inner">
+                       <button class="bt_minus">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#f34747" class="bi bi-dash-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                               <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                           </svg>
+                       </button>
+                       <input type="text" value="3" size="2" class="quantity" data-max-count="20" />
+                       <button class="bt_plus">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#f34747" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                               <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                           </svg>
+                       </button>
+                   </div>
+                   <div class="quantity_inner">
+                       <button class="bt_minus">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#f34747" class="bi bi-dash-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                               <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                           </svg>
+                       </button>
+                       <input type="text" value="3" size="2" class="quantity" data-max-count="20" />
+                       <button class="bt_plus">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#f34747" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                               <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                           </svg>
+                       </button>
+                   </div>
+               </div>
+           </div>
+           <div class="individual">
+               <div class="checkbox-wrap d-flex align-items-center">
+                   <input type="checkbox" id="check1" class="checkbox" checked>
+                   <span class="checkbox-toggle">
+                                            </span>
+                    <div class="label">Хочу индивидуально</div>
+               </div>
+               <p class="subtitle">Мы можем провести для вас экскурсию без посторонних посетителей</p>
+           </div>
+       </div>
+        <div class="contacts">
+            <form action="">
+                <input class="contacts_input" type="text" name="name" placeholder="Имя">
+                <input class="contacts_input" type="tel" name="name" placeholder="Телефон">
+                <input class="contacts_input" type="email" name="name" placeholder="Email">
+                <div class="individual  checkbox-box">
+                    <div class="checkbox-wrap d-flex align-items-center">
+                        <input type="checkbox" id="check2" class="checkbox" checked>
+                        <span class="checkbox-toggle">
+                                            </span>
+                        <div class="label">Принимаю условия <a href="#">оферты</a></div>
+                    </div>
+                </div>
+                <div class="price">
+                    Итого <span>16 600</span> руб.
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="button">оплатить онлайн</a>
+                    <a href="#" class="button">наличными на месте</a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+    <div class="after"></div>
+</div>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
         crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"
         integrity="sha512-+m6t3R87+6LdtYiCzRhC5+E0l4VQ9qIT1H9+t1wmHkMJvvUQNI5MKKb7b08WL4Kgp9K0IBgHDSLCRJk05cFUYg=="
         crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"
+        integrity="sha512-sM9DpZQXHGs+rFjJYXE1OcuCviEgaXoQIvgsH7nejZB64A09lKeTU4nrs/K6YxFs6f+9FF2awNeJTkaLuplBhg=="
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css" integrity="sha512-Ujn3LMQ8mHWqy7EPP32eqGKBhBU8v39JRIfCer4nTZqlsSZIwy5g3Wz9SaZrd6pp3vmjI34yyzguZ2KQ66CLSQ==" crossorigin="anonymous" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous"></script>
